@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Preview from "./pages/Preview";
 import Orders from "./pages/Orders";
 import ApiDemo from "./pages/ApiDemo";
+import LandingPageGenerator from "./pages/LandingPageGenerator";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,7 +19,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<LandingPageGenerator />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/preview" element={<Preview />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/api-demo" element={<ApiDemo />} />
